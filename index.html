@@ -1,156 +1,173 @@
 <!doctype html>
-<html lang="en">
+<html lang="nl">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>At Boegaloe | Furniture store on Kaya Grandi, Bonaire</title>
-<meta name="description" content="Sofas, scents, art and home accessories from Indonesia and the Netherlands. Visit At Boegaloe on Kaya Grandi 13, Kralendijk.">
+<title>At Boegaloe | Meubelwinkel op Kaya Grandi, Bonaire</title>
+<meta name="description" content="Banken, bedden, kunst en woonaccessoires uit Indonesië en Nederland. Kom langs bij At Boegaloe, Kaya Grandi 13, Kralendijk.">
 <link rel="icon" href="img/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
-  --cream:#F5EFE7; --sand:#EADFD2; --taupe:#B9A08F; --espresso:#2C201C; --ink:#3B2B26;
-  --muted:#6E5D55; --cognac:#A85A26; --green:#232B22; --green-2:#2F3A2C; --line:rgba(44,32,28,.14);
-  --serif:"Cormorant Garamond",Georgia,serif; --sans:"Manrope",system-ui,sans-serif;
-  --wrap:min(1240px,100% - 40px);
+  --plaster:#F4EDE4; --plaster-2:#EBE1D5; --jute:#C9AE88;
+  --ink:#2B1D18; --muted:#6D5B52; --line:rgba(43,29,24,.13);
+  --terra:#A65242; --terra-d:#8E4234; --burgundy:#6F2A31; --plum:#6A2150;
+  --orange:#E0642F; --pink:#E9709A; --cobalt:#2F4FC4; --green:#2E4A3D;
+  --serif:"Fraunces",Georgia,serif; --sans:"Manrope",system-ui,sans-serif;
+  --wrap:min(1260px,100% - 40px);
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{background:var(--cream);color:var(--ink);font:400 17px/1.6 var(--sans);-webkit-font-smoothing:antialiased}
+body{background:var(--plaster);color:var(--ink);font:400 17px/1.6 var(--sans);-webkit-font-smoothing:antialiased;overflow-x:clip}
 img{display:block;max-width:100%}
 a{color:inherit}
 .wrap{width:var(--wrap);margin-inline:auto}
-h1,h2,h3{font-family:var(--serif);font-weight:500;color:var(--espresso);line-height:1.02;letter-spacing:-.01em}
-.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 24px;border-radius:999px;font:600 15px/1 var(--sans);text-decoration:none;transition:transform .2s,background .2s,color .2s}
+h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.02;letter-spacing:-.01em;font-variation-settings:"opsz" 96}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:15px 24px;border-radius:999px;font:600 15px/1 var(--sans);text-decoration:none;transition:transform .2s,background .2s,color .2s;border:0;cursor:pointer}
 .btn:hover{transform:translateY(-1px)}
-.btn-dark{background:var(--espresso);color:var(--cream)}
-.btn-dark:hover{background:var(--cognac)}
-.btn-line{border:1px solid var(--espresso);color:var(--espresso)}
-.btn-line:hover{background:var(--espresso);color:var(--cream)}
-.btn-light{background:var(--cream);color:var(--espresso)}
-.btn-light:hover{background:var(--taupe)}
-.wa-ico{width:18px;height:18px;flex:none}
+.btn-ink{background:var(--ink);color:var(--plaster)}
+.btn-ink:hover{background:var(--terra)}
+.btn-line{box-shadow:inset 0 0 0 1px currentColor}
+.btn-plaster{background:var(--plaster);color:var(--ink)}
+.btn-plaster:hover{background:#fff}
+.wa{width:18px;height:18px;flex:none}
 
 /* top bar + header */
-.topbar{background:var(--espresso);color:var(--sand);text-align:center;font-size:14px;padding:9px 16px}
-header{position:sticky;top:0;z-index:20;background:rgba(245,239,231,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-.nav{display:flex;align-items:center;justify-content:space-between;height:76px}
-.logo{display:flex;align-items:center;gap:12px;text-decoration:none}
-.logo img{width:64px;height:64px;object-fit:cover;object-position:50% 95%;mix-blend-mode:multiply}
-.nav ul{display:flex;gap:34px;list-style:none;font-weight:500;font-size:15px}
+.topbar{background:var(--terra);color:#FBEFE6;font-size:14px}
+.topbar .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:9px 0}
+.lang{display:flex;gap:2px;background:rgba(0,0,0,.15);border-radius:999px;padding:3px}
+.lang button{border:0;background:none;color:inherit;font:600 12px var(--sans);padding:4px 10px;border-radius:999px;cursor:pointer;opacity:.75}
+.lang button[aria-pressed=true]{background:#FBEFE6;color:var(--terra);opacity:1}
+header{position:sticky;top:0;z-index:20;background:rgba(244,237,228,.93);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:78px;gap:20px}
+.logo img{width:66px;height:66px;object-fit:cover;mix-blend-mode:multiply}
+.nav ul{display:flex;gap:30px;list-style:none;font-weight:500;font-size:15px}
 .nav ul a{text-decoration:none}
-.nav ul a:hover{color:var(--cognac)}
-.status{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:500;color:var(--muted)}
-.dot{width:8px;height:8px;border-radius:50%;background:#9a8f88}
-.dot.open{background:#4F8A4B;box-shadow:0 0 0 4px rgba(79,138,75,.18)}
+.nav ul a:hover{color:var(--terra)}
+.status{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:500;color:var(--muted);white-space:nowrap}
+.dot{width:8px;height:8px;border-radius:50%;background:#a3958d}
+.dot.open{background:#4C8A4A;box-shadow:0 0 0 4px rgba(76,138,74,.18)}
 
 /* hero */
-.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;padding:64px 0 88px}
-.hero h1{font-size:clamp(50px,6.6vw,94px)}
-.hero p.lead{font-size:20px;color:var(--muted);max-width:30ch;margin:26px 0 36px}
-.hero .ctas{display:flex;gap:12px;flex-wrap:wrap}
-.hero .meta{display:flex;gap:28px;flex-wrap:wrap;margin-top:44px;padding-top:24px;border-top:1px solid var(--line);font-size:15px;color:var(--muted)}
-.hero .meta strong{display:block;color:var(--espresso);font-weight:600}
-.hero-img{position:relative;border-radius:6px;overflow:hidden;aspect-ratio:4/5;box-shadow:0 30px 60px -30px rgba(44,32,28,.45)}
-.hero-img img{width:100%;height:100%;object-fit:cover}
+.hero{display:grid;grid-template-columns:1fr 1.1fr;gap:56px;align-items:center;padding:56px 0 96px}
+.hero h1{font-size:clamp(50px,6.6vw,96px)}
+.hero h1 em{font-style:normal;color:var(--terra)}
+.hero .lead{font-size:20px;color:var(--muted);max-width:32ch;margin:26px 0 34px}
+.ctas{display:flex;gap:12px;flex-wrap:wrap}
+.facts{display:flex;gap:30px;flex-wrap:wrap;margin-top:44px;padding-top:24px;border-top:1px solid var(--line);font-size:15px;color:var(--muted)}
+.facts strong{display:block;color:var(--ink);font-weight:600}
+.hero-pics{position:relative;height:min(78vh,720px);min-height:520px}
+.hero-pics figure{position:absolute;overflow:hidden;border-radius:8px;box-shadow:0 30px 60px -30px rgba(43,29,24,.5)}
+.hero-pics img{width:100%;height:100%;object-fit:cover}
+.hp-main{inset:0 0 0 14%}
+.hp-small{left:0;bottom:-36px;width:38%;aspect-ratio:3/4;border:6px solid var(--plaster)}
 
-/* collection */
-section{padding:96px 0}
-.head{display:flex;justify-content:space-between;align-items:end;gap:32px;margin-bottom:48px}
-.head h2{font-size:clamp(40px,5vw,68px);max-width:14ch}
-.head p{max-width:38ch;color:var(--muted)}
-.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:20px}
-.card{position:relative;border-radius:6px;overflow:hidden;background:var(--sand);text-decoration:none;color:var(--cream);min-height:420px;display:flex;align-items:flex-end}
-.card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
-.card:hover img{transform:scale(1.04)}
-.card::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,14,12,0) 40%,rgba(20,14,12,.78))}
-.card .txt{position:relative;z-index:1;padding:26px;width:100%}
-.card h3{color:var(--cream);font-size:36px;margin-bottom:6px}
-.card p{font-size:15px;color:rgba(245,239,231,.85);max-width:34ch}
-.card .ask{display:inline-flex;align-items:center;gap:8px;margin-top:14px;font-weight:600;font-size:14px;border-bottom:1px solid rgba(245,239,231,.5);padding-bottom:3px}
-.c-sofa{grid-column:span 7;min-height:560px}
-.c-scent{grid-column:span 5;min-height:560px}
-.c-art,.c-mirror,.c-brass{grid-column:span 4}
-.c-plant{grid-column:span 5;min-height:480px}
-.tile{grid-column:span 7;background:var(--green);border-radius:6px;padding:48px;display:flex;flex-direction:column;justify-content:flex-end;gap:18px;color:var(--sand)}
-.tile h3{color:var(--cream);font-size:clamp(40px,4.4vw,60px);max-width:12ch}
-.tile p{max-width:40ch;color:rgba(234,223,210,.8)}
-.tile .btn{align-self:flex-start}
+/* rooms */
+.intro{padding:24px 0 56px}
+.intro h2{font-size:clamp(42px,5.4vw,76px);max-width:16ch}
+.intro p{max-width:46ch;color:var(--muted);margin-top:18px;font-size:18px}
+.room{color:#FBEFE6;padding:96px 0}
+.room .grid{display:grid;grid-template-columns:1.25fr 1fr;gap:56px;align-items:center}
+.room.flip .grid{grid-template-columns:1fr 1.25fr}
+.room.flip .pics{order:2}
+.room h2{font-size:clamp(42px,5vw,72px);color:#FFF6EE}
+.room p{margin:20px 0 30px;max-width:40ch;color:rgba(251,239,230,.85);font-size:18px}
+.room .tags{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:30px}
+.room .tags span{border:1px solid rgba(251,239,230,.35);border-radius:999px;padding:6px 14px;font-size:14px}
+.pics{display:grid;grid-template-columns:1.4fr 1fr;gap:14px;align-items:end}
+.pics img{width:100%;object-fit:cover;border-radius:8px}
+.pics img:first-child{aspect-ratio:3/4}
+.pics img:last-child{aspect-ratio:3/4;margin-bottom:-48px}
+.r-terra{background:var(--terra)}
+.r-burgundy{background:var(--burgundy)}
+.r-plum{background:var(--plum)}
+.r-green{background:var(--green)}
 
-/* scent band */
-.band{position:relative;min-height:clamp(520px,78vh,820px);display:flex;align-items:center;color:var(--cream);overflow:hidden;padding:0}
-.band img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.band::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(20,14,12,.82),rgba(20,14,12,.25))}
-.band .wrap{position:relative;z-index:1}
-.band h2{color:var(--cream);font-size:clamp(46px,6.4vw,92px);max-width:13ch}
-.band p{max-width:36ch;margin:22px 0 32px;color:rgba(245,239,231,.85);font-size:19px}
+/* made to order */
+.order{padding:120px 0 96px}
+.order .grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
+.order .ph{border-radius:8px;overflow:hidden;aspect-ratio:4/5;max-height:680px}
+.order .ph img{width:100%;height:100%;object-fit:cover}
+.order h2{font-size:clamp(42px,5vw,72px)}
+.order p{color:var(--muted);font-size:18px;max-width:40ch;margin:22px 0 30px}
+.swatches{display:flex;gap:6px;margin-bottom:32px}
+.swatches i{width:30px;height:30px;border-radius:50%;box-shadow:inset 0 0 0 1px rgba(0,0,0,.08)}
+
+/* new in */
+.newin{padding:40px 0 110px}
+.newin .head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:34px}
+.newin h2{font-size:clamp(42px,5vw,72px)}
+.strip{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(240px,1fr);gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:10px;scrollbar-width:thin}
+.strip a{scroll-snap-align:start;position:relative;border-radius:8px;overflow:hidden;aspect-ratio:4/5;text-decoration:none}
+.strip img{width:100%;height:100%;object-fit:cover;transition:transform .7s cubic-bezier(.2,.7,.2,1)}
+.strip a:hover img{transform:scale(1.04)}
+.strip span{position:absolute;left:12px;bottom:12px;background:rgba(244,237,228,.94);color:var(--ink);font-size:13px;font-weight:600;padding:7px 12px;border-radius:999px}
 
 /* styling help */
-.help{background:var(--green);color:var(--sand)}
-.help .grid2{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
-.help h2{color:var(--cream);font-size:clamp(44px,5.6vw,80px)}
-.help .lead{font-size:19px;margin:24px 0 36px;max-width:34ch;color:rgba(234,223,210,.85)}
-.steps{list-style:none;display:grid;gap:0}
-.steps li{display:grid;grid-template-columns:52px 1fr;gap:18px;padding:26px 0;border-top:1px solid rgba(234,223,210,.18)}
-.steps li:last-child{border-bottom:1px solid rgba(234,223,210,.18)}
-.steps svg{width:30px;height:30px;stroke:var(--taupe);fill:none;stroke-width:1.4}
-.steps strong{display:block;color:var(--cream);font-family:var(--serif);font-size:28px;font-weight:500;line-height:1.1;margin-bottom:4px}
-.phone{background:var(--cream);border-radius:28px;padding:14px;max-width:360px;margin-inline:auto;box-shadow:0 40px 80px -30px rgba(0,0,0,.6)}
-.chat{background:#E9E1D6;border-radius:18px;padding:18px 14px;display:grid;gap:10px;font-size:14px;color:var(--espresso)}
+.help{background:var(--plaster-2);padding:110px 0}
+.help .grid{display:grid;grid-template-columns:1.05fr .95fr;gap:72px;align-items:center}
+.help h2{font-size:clamp(44px,5.4vw,78px)}
+.help .lead{font-size:19px;margin:22px 0 34px;max-width:36ch;color:var(--muted)}
+.steps{list-style:none}
+.steps li{display:grid;grid-template-columns:48px 1fr;gap:16px;padding:22px 0;border-top:1px solid var(--line)}
+.steps li:last-child{border-bottom:1px solid var(--line)}
+.steps svg{width:28px;height:28px;stroke:var(--terra);fill:none;stroke-width:1.5}
+.steps strong{display:block;font-family:var(--serif);font-size:27px;font-weight:400;line-height:1.1;margin-bottom:4px}
+.phone{background:var(--ink);border-radius:32px;padding:12px;max-width:360px;margin-inline:auto;box-shadow:0 40px 80px -30px rgba(43,29,24,.6)}
+.chat{background:#EFE6DA;border-radius:22px;padding:16px 14px;display:grid;gap:9px;font-size:14px;color:var(--ink)}
 .chat .who{display:flex;align-items:center;gap:10px;padding-bottom:12px;border-bottom:1px solid var(--line);font-weight:600}
-.chat .who img{width:34px;height:34px;border-radius:50%;object-fit:cover;object-position:50% 20%}
+.chat .who img{width:34px;height:34px;border-radius:50%;object-fit:cover;object-position:50% 18%}
 .chat .who span{display:block;font-weight:400;font-size:12px;color:var(--muted)}
-.b{max-width:82%;padding:9px 12px;border-radius:12px;line-height:1.4}
-.b.me{justify-self:end;background:#D9EBC8;border-bottom-right-radius:3px}
+.b{max-width:84%;padding:9px 12px;border-radius:12px;line-height:1.4}
+.b.me{justify-self:end;background:#DCEBC9;border-bottom-right-radius:3px}
 .b.them{background:#fff;border-bottom-left-radius:3px}
 .b.photo{padding:4px}
-.b.photo img{border-radius:9px;aspect-ratio:4/3;object-fit:cover;width:190px}
-.b.picks{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;padding:4px;width:82%}
+.b.photo img{border-radius:9px;aspect-ratio:4/3;object-fit:cover;width:200px}
+.b.picks{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;padding:4px;width:84%}
 .b.picks img{aspect-ratio:1;object-fit:cover;border-radius:7px}
 
 /* story */
-.story .grid2{display:grid;grid-template-columns:.9fr 1.1fr;gap:72px;align-items:center}
-.story .ph{border-radius:6px;overflow:hidden;aspect-ratio:4/5}
+.story{padding:120px 0}
+.story .grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:72px;align-items:center}
+.story .ph{border-radius:8px;overflow:hidden;aspect-ratio:4/5}
 .story .ph img{width:100%;height:100%;object-fit:cover}
-.story h2{font-size:clamp(44px,5.4vw,76px);margin-bottom:26px}
-.story p{color:var(--muted);max-width:46ch;margin-bottom:16px}
-blockquote{margin-top:36px;padding-top:30px;border-top:1px solid var(--line);font-family:var(--serif);font-size:30px;line-height:1.2;color:var(--espresso);max-width:26ch}
+.story h2{font-size:clamp(44px,5.4vw,76px);margin-bottom:24px}
+.story p{color:var(--muted);max-width:46ch;margin-bottom:16px;font-size:18px}
+blockquote{margin-top:34px;padding-top:28px;border-top:1px solid var(--line);font-family:var(--serif);font-size:30px;line-height:1.2;max-width:26ch}
 blockquote cite{display:block;margin-top:14px;font:500 15px var(--sans);font-style:normal;color:var(--muted)}
 
 /* visit */
-.visit{background:var(--sand)}
-.visit .grid2{display:grid;grid-template-columns:1fr 1.1fr;gap:56px}
-.visit h2{font-size:clamp(46px,6vw,86px);margin-bottom:18px}
-.addr{font-size:21px;color:var(--espresso);margin-bottom:30px}
-.hours{list-style:none;margin-bottom:34px;max-width:420px}
-.hours li{display:flex;justify-content:space-between;padding:11px 0;border-bottom:1px solid var(--line);font-size:16px}
-.hours li.today{font-weight:600;color:var(--espresso)}
-.hours li.today span:first-child::after{content:"  today";font-weight:500;color:var(--cognac);font-size:13px}
-.hours .closed{color:var(--muted)}
-.people{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:30px;max-width:520px}
-.person{background:var(--cream);border-radius:6px;padding:18px 20px}
-.person strong{display:block;font-family:var(--serif);font-size:26px;font-weight:500;color:var(--espresso)}
-.person a{text-decoration:none;color:var(--muted);font-size:15px}
-.person a:hover{color:var(--cognac)}
-.map{border-radius:6px;overflow:hidden;min-height:520px;background:#ddd;border:1px solid var(--line)}
-.map iframe{width:100%;height:100%;min-height:520px;border:0;filter:sepia(.25) saturate(.8)}
+.visit{background:var(--burgundy);color:#FBEFE6;padding:110px 0}
+.visit .grid{display:grid;grid-template-columns:1fr 1.1fr;gap:56px}
+.visit h2{font-size:clamp(46px,6vw,86px);color:#FFF6EE;margin-bottom:16px}
+.addr{font-size:21px;margin-bottom:30px}
+.hours{list-style:none;margin-bottom:34px;max-width:440px}
+.hours li{display:flex;justify-content:space-between;padding:11px 0;border-bottom:1px solid rgba(251,239,230,.18)}
+.hours li.today{font-weight:700;color:#fff}
+.hours li.today .tag{font-weight:500;color:#F6B48F;font-size:13px;margin-left:8px}
+.hours .closed{opacity:.6}
+.people{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:28px;max-width:520px}
+.person{background:rgba(251,239,230,.08);border-radius:8px;padding:16px 18px}
+.person strong{display:block;font-family:var(--serif);font-size:25px;font-weight:400}
+.person a{text-decoration:none;opacity:.8;font-size:15px}
+.person a:hover{opacity:1}
+.map{border-radius:8px;overflow:hidden;min-height:540px;background:#ddd}
+.map iframe{width:100%;height:100%;min-height:540px;border:0;filter:sepia(.25) saturate(.85)}
 
-/* footer */
-footer{background:var(--espresso);color:var(--sand);padding:64px 0 40px;font-size:15px}
-.fgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:40px}
-footer h4{font:600 15px var(--sans);color:var(--cream);margin-bottom:14px}
+footer{background:var(--ink);color:var(--plaster-2);padding:64px 0 36px;font-size:15px}
+.fgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.3fr;gap:40px}
+footer h4{font:600 15px var(--sans);color:#fff;margin-bottom:14px}
 footer ul{list-style:none;display:grid;gap:8px}
-footer a{text-decoration:none;color:rgba(234,223,210,.8)}
-footer a:hover{color:var(--cream)}
-.flogo{font-family:var(--serif);font-size:40px;color:var(--cream);line-height:1;margin-bottom:12px}
-.news{display:flex;gap:8px;margin-top:6px}
-.news input{flex:1;min-width:0;background:transparent;border:1px solid rgba(234,223,210,.3);border-radius:999px;padding:12px 16px;color:var(--cream);font:inherit}
-.news button{background:var(--cream);color:var(--espresso);border:0;border-radius:999px;padding:0 18px;font:600 14px var(--sans);cursor:pointer}
-.legal{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-top:56px;padding-top:22px;border-top:1px solid rgba(234,223,210,.15);color:rgba(234,223,210,.55);font-size:13px}
-
+footer a{text-decoration:none;color:rgba(235,225,213,.8)}
+footer a:hover{color:#fff}
+.flogo{font-family:var(--serif);font-size:42px;color:#fff;line-height:1;margin-bottom:12px}
+.news{display:flex;gap:8px}
+.news input{flex:1;min-width:0;background:transparent;border:1px solid rgba(235,225,213,.3);border-radius:999px;padding:12px 16px;color:#fff;font:inherit}
+.news button{background:var(--plaster);color:var(--ink);border:0;border-radius:999px;padding:0 18px;font:600 14px var(--sans);cursor:pointer}
+.legal{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-top:56px;padding-top:22px;border-top:1px solid rgba(235,225,213,.15);color:rgba(235,225,213,.55);font-size:13px}
 .fab{position:fixed;right:18px;bottom:18px;z-index:30;display:none;background:#25D366;color:#fff;width:58px;height:58px;border-radius:50%;align-items:center;justify-content:center;box-shadow:0 12px 30px -8px rgba(0,0,0,.4)}
 .fab svg{width:28px;height:28px}
 
@@ -158,39 +175,48 @@ footer a:hover{color:var(--cream)}
 .reveal.in{opacity:1;transform:none}
 @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
 
-@media (max-width:960px){
+@media (max-width:980px){
   .nav ul{display:none}
-  .hero,.help .grid2,.story .grid2,.visit .grid2{grid-template-columns:1fr;gap:40px}
-  .hero{padding:36px 0 64px}
-  .head{flex-direction:column;align-items:flex-start}
-  .grid>.card,.grid>.tile{grid-column:span 12;min-height:420px}
-  .tile{min-height:auto!important;padding:32px}
+  .hero,.room .grid,.room.flip .grid,.order .grid,.help .grid,.story .grid,.visit .grid{grid-template-columns:1fr;gap:44px}
+  .room.flip .pics{order:0}
+  .hero{padding:32px 0 80px}
+  .hero-pics{height:auto;min-height:0;aspect-ratio:4/5}
+  .room{padding:72px 0 88px}
+  .pics img:last-child{margin-bottom:-32px}
+  .newin .head{flex-direction:column;align-items:flex-start}
   .fgrid{grid-template-columns:1fr 1fr}
   .fab{display:flex}
-  section{padding:72px 0}
   .map,.map iframe{min-height:360px}
+  .order,.story,.help,.visit{padding:80px 0}
 }
 @media (max-width:560px){
   :root{--wrap:calc(100% - 32px)}
+  .topbar .msg{font-size:13px}
   .status .lbl{display:none}
-  .people{grid-template-columns:1fr}
-  .fgrid{grid-template-columns:1fr}
-  .hero .ctas .btn{width:100%;justify-content:center}
+  .people,.fgrid{grid-template-columns:1fr}
+  .ctas .btn{width:100%}
+  .hp-small{width:44%}
 }
 </style>
 </head>
 <body>
 
-<div class="topbar">Free delivery anywhere on Bonaire on orders over $100</div>
+<div class="topbar">
+  <div class="wrap">
+    <span class="msg" data-en="Free delivery on Bonaire on orders over $100">Gratis bezorging op Bonaire vanaf $100</span>
+    <div class="lang" role="group" aria-label="Language"><button data-set="nl" aria-pressed="true">NL</button><button data-set="en" aria-pressed="false">EN</button></div>
+  </div>
+</div>
 
 <header>
   <nav class="nav wrap">
-    <a class="logo" href="#top" aria-label="At Boegaloe home"><img src="img/logo.png" alt="At Boegaloe"></a>
+    <a class="logo" href="#top" aria-label="At Boegaloe"><img src="img/logo.png" alt="At Boegaloe"></a>
     <ul>
-      <li><a href="#collection">In the store</a></li>
-      <li><a href="#styling">Styling help</a></li>
-      <li><a href="#story">Our story</a></li>
-      <li><a href="#visit">Visit</a></li>
+      <li><a href="#winkel" data-en="The store">De winkel</a></li>
+      <li><a href="#bedden" data-en="Beds to order">Bedden op maat</a></li>
+      <li><a href="#nieuw" data-en="New in">Nieuw binnen</a></li>
+      <li><a href="#verhaal" data-en="Our story">Ons verhaal</a></li>
+      <li><a href="#bezoek" data-en="Visit">Bezoek</a></li>
     </ul>
     <span class="status"><span class="dot" id="dot"></span><span id="statusText">Kaya Grandi 13</span></span>
   </nav>
@@ -198,140 +224,164 @@ footer a:hover{color:var(--cream)}
 
 <main id="top">
 
-<section class="wrap hero" style="padding-top:64px">
+<section class="wrap hero">
   <div class="reveal">
-    <h1>Furnish your home on Bonaire. No container needed.</h1>
-    <p class="lead">Sofas, scents, art and accessories from Indonesia and the Netherlands. Picked by a mother and daughter in Kralendijk.</p>
+    <h1 data-en="Furnish your home on Bonaire. <em>No container needed.</em>">Je huis inrichten op Bonaire. <em>Zonder eigen container.</em></h1>
+    <p class="lead" data-en="Sofas, beds, art and accessories from Indonesia and the Netherlands. Picked by a mother and daughter on Kaya Grandi.">Banken, bedden, kunst en accessoires uit Indonesië en Nederland. Uitgezocht door moeder en dochter op Kaya Grandi.</p>
     <div class="ctas">
-      <a class="btn btn-dark" href="#collection">See what's in the store</a>
-      <a class="btn btn-line" data-wa="Hi At Boegaloe! I'd like some styling advice. I'll send a photo of my room." href="#">
-        <svg class="wa-ico" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.4.6c-.1.2-.3.3-.1.6.2.3.7 1.2 1.6 1.9 1.1.9 2 1.2 2.3 1.4.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.8-.1 1.4Z"/></svg>
-        Send us your room
+      <a class="btn btn-ink" href="#winkel" data-en="Walk through the store">Loop door de winkel</a>
+      <a class="btn btn-line" data-wa="Hoi At Boegaloe! Ik wil graag stylingadvies. Ik stuur een foto van mijn kamer." data-wa-en="Hi At Boegaloe! I'd like some styling advice. I'll send a photo of my room." href="#">
+        <svg class="wa" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.4.6c-.1.2-.3.3-.1.6.2.3.7 1.2 1.6 1.9 1.1.9 2 1.2 2.3 1.4.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.8-.1 1.4Z"/></svg>
+        <span data-en="Send us your room">Stuur ons je kamer</span>
       </a>
     </div>
-    <div class="meta">
-      <div><strong>Kaya Grandi 13</strong>Kralendijk centre</div>
-      <div><strong id="heroHours">Tue to Sat</strong><span id="heroHoursSub">10:00 to 17:00</span></div>
-      <div><strong>Free delivery</strong>on Bonaire over $100</div>
+    <div class="facts">
+      <div><strong>Kaya Grandi 13</strong><span data-en="Kralendijk centre">Centrum Kralendijk</span></div>
+      <div><strong id="heroOpen">Tue to Sat</strong><span id="heroOpenSub"></span></div>
+      <div><strong data-en="Free delivery">Gratis bezorging</strong><span data-en="on Bonaire over $100">op Bonaire vanaf $100</span></div>
     </div>
   </div>
-  <div class="hero-img reveal"><img src="img/sofa.jpg" alt="Cognac velvet sofa with a tiger cushion in front of palm leaf wallpaper at At Boegaloe" fetchpriority="high"></div>
+  <div class="hero-pics reveal">
+    <figure class="hp-main"><img src="img/ig-terracotta-room.jpg" alt="Woonkamer in de winkel met terracotta muur, jute plafond en rotan hanglamp" fetchpriority="high"></figure>
+    <figure class="hp-small"><img src="img/ig-purple-corner.jpg" alt="Kleurrijke hoek met paarse muur, vaas met bloemen en lamp"></figure>
+  </div>
 </section>
 
-<section id="collection" style="padding-top:24px">
+<section id="winkel" class="wrap intro reveal">
+  <h2 data-en="Walk through the store before you come in.">Loop alvast door de winkel.</h2>
+  <p data-en="Every room in At Boegaloe has its own colour and its own mood. Here's what you'll find in each one.">Elke ruimte in At Boegaloe heeft een eigen kleur en een eigen sfeer. Dit vind je in elke kamer.</p>
+</section>
+
+<section class="room r-terra">
+  <div class="wrap grid">
+    <div class="pics reveal"><img src="img/store-boucle.jpg" alt="Twee teddy fauteuils met poef op jute kleed" loading="lazy"><img src="img/store-living.jpg" alt="Woonhoek met teddy stoel, olijfboom en spiegels" loading="lazy"></div>
+    <div class="reveal">
+      <h2 data-en="The living room.">De woonkamer.</h2>
+      <p data-en="Deep sofas, teddy armchairs, poufs and side tables. Sit on everything. That's what it's there for.">Diepe banken, teddy fauteuils, poefs en bijzettafels. Ga overal op zitten. Daar staat het voor.</p>
+      <div class="tags"><span data-en="Sofas">Banken</span><span data-en="Armchairs">Fauteuils</span><span data-en="Poufs">Poefs</span><span data-en="Rugs">Vloerkleden</span><span data-en="Floor lamps">Vloerlampen</span></div>
+      <a class="btn btn-plaster" data-wa="Hoi At Boegaloe! Welke banken en fauteuils hebben jullie nu in de winkel?" data-wa-en="Hi At Boegaloe! Which sofas and armchairs do you have in the store right now?" href="#" data-en="Ask what's in stock">Vraag wat er op voorraad is</a>
+    </div>
+  </div>
+</section>
+
+<section class="room r-burgundy flip">
+  <div class="wrap grid">
+    <div class="pics reveal"><img src="img/store-burgundy.jpg" alt="Ronde houten eettafel met groene velvet stoelen en rotan hanglamp" loading="lazy"><img src="img/store-round-table.jpg" alt="Eethoek met bananenplant en kast vol accessoires" loading="lazy"></div>
+    <div class="reveal">
+      <h2 data-en="The dining room.">De eetkamer.</h2>
+      <p data-en="Solid wood tables, green velvet chairs and rattan pendants. Dinner with friends starts here.">Tafels van massief hout, groene velvet stoelen en rotan hanglampen. Hier begint een etentje met vrienden.</p>
+      <div class="tags"><span data-en="Dining tables">Eettafels</span><span data-en="Chairs">Stoelen</span><span data-en="Pendant lamps">Hanglampen</span><span data-en="Tableware">Servies</span></div>
+      <a class="btn btn-plaster" data-wa="Hoi At Boegaloe! Ik zoek een eettafel en stoelen. Wat hebben jullie?" data-wa-en="Hi At Boegaloe! I'm looking for a dining table and chairs. What do you have?" href="#" data-en="Ask about dining">Vraag naar eettafels</a>
+    </div>
+  </div>
+</section>
+
+<section class="room r-plum">
+  <div class="wrap grid">
+    <div class="pics reveal"><img src="img/store-colour-room.jpg" alt="Kleurrijke kamer met kasten vol servies, manden en bloemen" loading="lazy"><img src="img/ig-dolce-vita.jpg" alt="Roze kussen La Dolce Vita op een paarse muur" loading="lazy"></div>
+    <div class="reveal">
+      <h2 data-en="The colour room.">De kleurenkamer.</h2>
+      <p data-en="Cushions, cups, tiles, bags and cards. The place for a gift, or a little something for yourself.">Kussens, bekers, tegeltjes, tassen en kaarten. Voor een cadeautje, of iets kleins voor jezelf.</p>
+      <div class="tags"><span data-en="Gifts">Cadeaus</span><span data-en="Cushions">Kussens</span><span data-en="Tableware">Servies</span><span data-en="Bags">Tassen</span><span data-en="Cards">Kaarten</span></div>
+      <a class="btn btn-plaster" data-wa="Hoi At Boegaloe! Ik zoek een cadeautje. Kunnen jullie me helpen?" data-wa-en="Hi At Boegaloe! I'm looking for a gift. Can you help?" href="#" data-en="Find a gift">Vind een cadeau</a>
+    </div>
+  </div>
+</section>
+
+<section class="room r-green flip">
+  <div class="wrap grid">
+    <div class="pics reveal"><img src="img/store-shelves.jpg" alt="Kasten met geurkaarsen, diffusers en zeep" loading="lazy"><img src="img/store-sideboard.jpg" alt="Dressoir met metalen wandschalen en bananenplant" loading="lazy"></div>
+    <div class="reveal">
+      <h2 data-en="Scent and finishing touches.">Geur en de laatste details.</h2>
+      <p data-en="Candles, home sprays and diffusers. Plus wall art, mirrors and plants. Smell is just as important as looks.">Kaarsen, huisparfum en diffusers. Plus wanddecoratie, spiegels en planten. Geur is net zo belangrijk als hoe het eruitziet.</p>
+      <div class="tags"><span data-en="Candles">Kaarsen</span><span data-en="Diffusers">Diffusers</span><span data-en="Wall art">Wanddecoratie</span><span data-en="Mirrors">Spiegels</span><span data-en="Plants">Planten</span></div>
+      <a class="btn btn-plaster" data-wa="Hoi At Boegaloe! Welke geuren hebben jullie in de winkel?" data-wa-en="Hi At Boegaloe! Which scents do you have in the store?" href="#" data-en="Ask about scents">Vraag naar geuren</a>
+    </div>
+  </div>
+</section>
+
+<section id="bedden" class="order">
+  <div class="wrap grid">
+    <div class="ph reveal"><img src="img/ig-velvet.jpg" alt="Stalenkaart met velvet kleuren voor bedden" loading="lazy"></div>
+    <div class="reveal">
+      <h2 data-en="Your bed, in your colour.">Jouw bed, in jouw kleur.</h2>
+      <p data-en="Velvet beds in dozens of colours, with or without headboard. Boxsprings too. Pick the fabric in the store. We order it for you.">Velvet bedden in tientallen kleuren, met of zonder hoofdbord. Ook boxsprings. Kies de stof in de winkel. Wij bestellen hem voor je.</p>
+      <div class="swatches" aria-hidden="true"><i style="background:#E8DCCB"></i><i style="background:#8B7563"></i><i style="background:#C7262E"></i><i style="background:#C86E6E"></i><i style="background:#5B1E3A"></i><i style="background:#2E5FA8"></i><i style="background:#1F4A3E"></i><i style="background:#D9B33A"></i></div>
+      <a class="btn btn-ink" data-wa="Hoi At Boegaloe! Ik heb interesse in een velvet bed. Welke kleuren en maten zijn er?" data-wa-en="Hi At Boegaloe! I'm interested in a velvet bed. Which colours and sizes are there?" href="#" data-en="Ask about beds">Vraag naar bedden</a>
+    </div>
+  </div>
+</section>
+
+<section id="nieuw" class="newin">
   <div class="wrap">
     <div class="head reveal">
-      <h2>What you'll find in the store.</h2>
-      <p>New pieces come in all the time. See something you like? Ask us on WhatsApp and we'll tell you what's on the floor today.</p>
+      <h2 data-en="New in this week.">Net binnen.</h2>
+      <a class="btn btn-line" href="https://instagram.com/atboegaloe" target="_blank" rel="noopener" data-en="Follow @atboegaloe">Volg @atboegaloe</a>
     </div>
-    <div class="grid">
-      <a class="card c-sofa reveal" data-wa="Hi At Boegaloe! Which sofas do you have in the store right now?" href="#">
-        <img src="img/cushion.jpg" alt="" loading="lazy">
-        <div class="txt"><h3>Sofas</h3><p>A sofa that catches your eye. A place to relax and make memories.</p><span class="ask">Ask what's in stock</span></div>
-      </a>
-      <a class="card c-scent reveal" data-wa="Hi At Boegaloe! Which scents do you have? Candles, home spray or diffusers." href="#">
-        <img src="img/scent.jpg" alt="" loading="lazy">
-        <div class="txt"><h3>Home scents</h3><p>Candles, home sprays and diffusers.</p><span class="ask">Ask about scents</span></div>
-      </a>
-      <a class="card c-art reveal" data-wa="Hi At Boegaloe! I have a big empty wall. Which paintings do you have?" href="#">
-        <img src="img/painting.jpg" alt="" loading="lazy">
-        <div class="txt"><h3>Wall art</h3><p>Big paintings with deep colours for the big empty wall.</p><span class="ask">Ask about art</span></div>
-      </a>
-      <a class="card c-mirror reveal" data-wa="Hi At Boegaloe! Which mirrors and rattan pieces do you have?" href="#">
-        <img src="img/mirror.jpg" alt="" loading="lazy">
-        <div class="txt"><h3>Mirrors &amp; rattan</h3><p>Natural textures that make a room breathe.</p><span class="ask">Ask about mirrors</span></div>
-      </a>
-      <a class="card c-brass reveal" data-wa="Hi At Boegaloe! Which side tables do you have in the store?" href="#">
-        <img src="img/brass.jpg" alt="" loading="lazy">
-        <div class="txt"><h3>Side tables</h3><p>Wood, copper, stone and glass.</p><span class="ask">Ask about tables</span></div>
-      </a>
-      <a class="card c-plant reveal" data-wa="Hi At Boegaloe! Which artificial plants and pots do you have?" href="#">
-        <img src="img/aloe.jpg" alt="" loading="lazy">
-        <div class="txt"><h3>Plants &amp; pots</h3><p>Artificial plants, always in stock. Brighten up that dark corner.</p><span class="ask">Ask about plants</span></div>
-      </a>
-      <div class="tile reveal">
-        <h3>Looking for something else?</h3>
-        <p>Cushions, lanterns, vases, baskets. The store changes with every new shipment. Tell us what you need and we'll check.</p>
-        <a class="btn btn-light" data-wa="Hi At Boegaloe! I'm looking for:" href="#">Ask us on WhatsApp</a>
-      </div>
+    <div class="strip reveal">
+      <a data-wa="Hoi At Boegaloe! Hebben jullie de bekers met letters nog?" data-wa-en="Hi At Boegaloe! Do you still have the letter cups?" href="#"><img src="img/ig-cups.jpg" alt="Bekers met letters op het strand" loading="lazy"><span data-en="Letter cups">Letterbekers</span></a>
+      <a data-wa="Hoi At Boegaloe! Hebben jullie de gehaakte tassen nog?" data-wa-en="Hi At Boegaloe! Do you still have the crochet bags?" href="#"><img src="img/ig-bags.jpg" alt="Gehaakte tassen in roze, oranje en blauw" loading="lazy"><span data-en="Crochet bags">Gehaakte tassen</span></a>
+      <a data-wa="Hoi At Boegaloe! Hebben jullie de tegeltjes nog?" data-wa-en="Hi At Boegaloe! Do you still have the tiles?" href="#"><img src="img/ig-coffee.jpg" alt="Tegeltjes met teksten naast koffiebekers" loading="lazy"><span data-en="Tiles with a message">Tegeltjes met tekst</span></a>
+      <a data-wa="Hoi At Boegaloe! Hebben jullie de vaas en de groene zuil nog?" data-wa-en="Hi At Boegaloe! Do you still have the vase and the green pedestal?" href="#"><img src="img/ig-purple-corner.jpg" alt="Vaas met bloemen op groene tegelzuil" loading="lazy"><span data-en="Vases">Vazen</span></a>
+      <a data-wa="Hoi At Boegaloe! Welke kerstdecoratie hebben jullie dit jaar?" data-wa-en="Hi At Boegaloe! Which Christmas decorations do you have this year?" href="#"><img src="img/store-xmas-table.jpg" alt="Kersttafel met kerstballen en lichtkransen" loading="lazy"><span data-en="Christmas is in">Kerst is binnen</span></a>
     </div>
   </div>
 </section>
 
-<section class="band">
-  <img src="img/scent-bar.jpg" alt="Premium home fragrance bar with glass cloches at At Boegaloe" loading="lazy">
-  <div class="wrap reveal">
-    <h2>Smell is just as important as looks.</h2>
-    <p>Come in and try the scent bar. The right one makes you feel like you're home.</p>
-    <a class="btn btn-light" href="#visit">Plan your visit</a>
-  </div>
-</section>
-
-<section id="styling" class="help">
-  <div class="wrap grid2">
+<section class="help">
+  <div class="wrap grid">
     <div class="reveal">
-      <h2>Not sure what fits? Send us your room.</h2>
-      <p class="lead">Free styling advice from Fiona and Robbin. Before you buy anything.</p>
+      <h2 data-en="Not sure what fits? Send us your room.">Twijfel je? Stuur ons je kamer.</h2>
+      <p class="lead" data-en="Free styling advice from Fiona and Robbin. Before you buy anything.">Gratis stylingadvies van Fiona en Robbin. Nog voor je iets koopt.</p>
       <ul class="steps">
-        <li>
-          <svg viewBox="0 0 32 32"><rect x="4" y="9" width="24" height="17" rx="3"/><circle cx="16" cy="17.5" r="5"/><path d="M11 9l2-3h6l2 3"/></svg>
-          <div><strong>Take a photo</strong>Of the corner, wall or sofa you want to change.</div>
-        </li>
-        <li>
-          <svg viewBox="0 0 32 32"><path d="M5 26l2-6a11 11 0 1 1 4 4z"/></svg>
-          <div><strong>Send it on WhatsApp</strong>Add your budget if you have one.</div>
-        </li>
-        <li>
-          <svg viewBox="0 0 32 32"><path d="M6 16l6 6 14-14"/></svg>
-          <div><strong>Get pieces that fit</strong>We reply with ideas from the store. Pick them up or we deliver.</div>
-        </li>
+        <li><svg viewBox="0 0 32 32"><rect x="4" y="9" width="24" height="17" rx="3"/><circle cx="16" cy="17.5" r="5"/><path d="M11 9l2-3h6l2 3"/></svg><div><strong data-en="Take a photo">Maak een foto</strong><span data-en="Of the corner, wall or sofa you want to change.">Van de hoek, muur of bank die anders moet.</span></div></li>
+        <li><svg viewBox="0 0 32 32"><path d="M5 26l2-6a11 11 0 1 1 4 4z"/></svg><div><strong data-en="Send it on WhatsApp">Stuur hem via WhatsApp</strong><span data-en="Add your budget if you have one.">Zet je budget erbij als je dat hebt.</span></div></li>
+        <li><svg viewBox="0 0 32 32"><path d="M6 16l6 6 14-14"/></svg><div><strong data-en="Get pieces that fit">Krijg stukken die passen</strong><span data-en="We reply with ideas from the store. Pick up or we deliver.">Wij sturen ideeën uit de winkel terug. Ophalen of wij bezorgen.</span></div></li>
       </ul>
-      <p style="margin-top:34px"><a class="btn btn-light" data-wa="Hi At Boegaloe! I'd like some styling advice. Here's a photo of my room:" href="#">Send a photo on WhatsApp</a></p>
+      <p style="margin-top:32px"><a class="btn btn-ink" data-wa="Hoi At Boegaloe! Ik wil graag stylingadvies. Hier is een foto van mijn kamer:" data-wa-en="Hi At Boegaloe! I'd like some styling advice. Here's a photo of my room:" href="#" data-en="Send a photo on WhatsApp">Stuur een foto via WhatsApp</a></p>
     </div>
     <div class="phone reveal" aria-hidden="true">
       <div class="chat">
-        <div class="who"><img src="img/family.jpg" alt=""><div>At Boegaloe<span>usually replies within the hour</span></div></div>
-        <div class="b me photo"><img src="img/brass.jpg" alt=""></div>
-        <div class="b me">This corner feels empty. Budget around $300. Ideas?</div>
-        <div class="b them">Love the light there! These three would work well together:</div>
-        <div class="b them picks"><img src="img/aloe.jpg" alt=""><img src="img/mirror.jpg" alt=""><img src="img/cushion.jpg" alt=""></div>
-        <div class="b them">Want us to put them aside for you?</div>
+        <div class="who"><img src="img/family.jpg" alt=""><div>At Boegaloe<span data-en="usually replies within the hour">reageert meestal binnen een uur</span></div></div>
+        <div class="b me photo"><img src="img/store-mirror.jpg" alt=""></div>
+        <div class="b me" data-en="This corner feels empty. Budget around $400. Ideas?">Deze hoek voelt leeg. Budget rond $400. Ideeën?</div>
+        <div class="b them" data-en="Love the light there! These three work well together:">Wat een mooi licht! Deze drie passen goed samen:</div>
+        <div class="b them picks"><img src="img/store-boucle.jpg" alt=""><img src="img/ig-dolce-vita.jpg" alt=""><img src="img/aloe.jpg" alt=""></div>
+        <div class="b them" data-en="Shall we put them aside for you?">Zullen we ze voor je apart zetten?</div>
       </div>
     </div>
   </div>
 </section>
 
-<section id="story" class="story">
-  <div class="wrap grid2">
-    <div class="ph reveal"><img src="img/family.jpg" alt="Fiona and Robbin de Man in front of the At Boegaloe store on Kaya Grandi" loading="lazy"></div>
+<section id="verhaal" class="story">
+  <div class="wrap grid">
+    <div class="ph reveal"><img src="img/family.jpg" alt="Fiona en Robbin de Man voor de winkel op Kaya Grandi" loading="lazy"></div>
     <div class="reveal">
-      <h2>A mother and daughter on Kaya Grandi.</h2>
-      <p>We are five Boegaloes. One close family, ready for a new adventure on Bonaire.</p>
-      <p>Fiona and Robbin started the store together in the centre of Kralendijk. Furniture and accessories from Indonesia and the Netherlands. Pieces you can combine your own way, at a fair price.</p>
-      <p>We love natural textures. Wood, copper, stone and glass, mixed with some green.</p>
-      <blockquote>“Brighten up that dark corner, or add a touch of nature for that tropical feeling.”<cite>Robbin de Man</cite></blockquote>
+      <h2 data-en="A mother and daughter on Kaya Grandi.">Moeder en dochter op Kaya Grandi.</h2>
+      <p data-en="We are five Boegaloes. One close family, ready for a new adventure on Bonaire.">Wij zijn vijf Boegaloes. Eén hecht gezin, klaar voor een nieuw avontuur op Bonaire.</p>
+      <p data-en="Fiona and Robbin started the store together in the centre of Kralendijk. Furniture and accessories from Indonesia and the Netherlands. Pieces you combine your own way, at a fair price.">Fiona en Robbin begonnen de winkel samen in het centrum van Kralendijk. Meubels en accessoires uit Indonesië en Nederland. Stukken die je op je eigen manier combineert, voor een eerlijke prijs.</p>
+      <p data-en="We fill a container, unpack it on Kaya Grandi, and the store changes with every shipment.">Wij vullen de container, pakken hem uit op Kaya Grandi, en met elke lading verandert de winkel.</p>
+      <blockquote data-en="“Brighten up that dark corner, or add a touch of nature for that tropical feeling.”<cite>Robbin de Man</cite>">“Maak die donkere hoek lichter, of voeg een beetje natuur toe voor dat tropische gevoel.”<cite>Robbin de Man</cite></blockquote>
     </div>
   </div>
 </section>
 
-<section id="visit" class="visit">
-  <div class="wrap grid2">
+<section id="bezoek" class="visit">
+  <div class="wrap grid">
     <div class="reveal">
-      <h2>Come and sit on it.</h2>
+      <h2 data-en="Come and sit on it.">Kom erop zitten.</h2>
       <p class="addr">Kaya Grandi 13, Kralendijk, Bonaire</p>
       <ul class="hours" id="hours"></ul>
       <div class="people">
         <div class="person"><strong>Robbin de Man</strong><a href="tel:+5997827566">+599 782 7566</a></div>
         <div class="person"><strong>Fiona de Man</strong><a href="tel:+5997008114">+599 700 8114</a></div>
       </div>
-      <div style="display:flex;gap:12px;flex-wrap:wrap">
-        <a class="btn btn-dark" href="https://www.google.com/maps/dir/?api=1&destination=Kaya+Grandi+13+Kralendijk+Bonaire" target="_blank" rel="noopener">Get directions</a>
+      <div class="ctas">
+        <a class="btn btn-plaster" href="https://www.google.com/maps/dir/?api=1&destination=Kaya+Grandi+13+Kralendijk+Bonaire" target="_blank" rel="noopener" data-en="Get directions">Routebeschrijving</a>
         <a class="btn btn-line" href="mailto:info@atboegaloe.com">info@atboegaloe.com</a>
       </div>
     </div>
-    <div class="map reveal">
-      <iframe title="At Boegaloe on the map" loading="lazy" src="https://www.google.com/maps?q=Kaya+Grandi+13,+Kralendijk,+Bonaire&z=17&output=embed"></iframe>
-    </div>
+    <div class="map reveal"><iframe title="At Boegaloe op de kaart" loading="lazy" src="https://www.google.com/maps?q=Kaya+Grandi+13,+Kralendijk,+Bonaire&z=17&output=embed"></iframe></div>
   </div>
 </section>
 
@@ -340,66 +390,62 @@ footer a:hover{color:var(--cream)}
 <footer>
   <div class="wrap">
     <div class="fgrid">
-      <div>
-        <div class="flogo">at boegaloe</div>
-        <p style="color:rgba(234,223,210,.7);max-width:30ch">Furniture and home accessories on Kaya Grandi, Kralendijk.</p>
-      </div>
-      <div>
-        <h4>Visit</h4>
-        <ul><li>Kaya Grandi 13</li><li>Tue to Fri 10:00 to 17:00</li><li>Sat 10:00 to 16:00</li></ul>
-      </div>
-      <div>
-        <h4>Follow</h4>
-        <ul><li><a href="https://instagram.com/atboegaloe" target="_blank" rel="noopener">Instagram</a></li><li><a href="https://facebook.com/atboegaloe" target="_blank" rel="noopener">Facebook</a></li><li><a href="mailto:info@atboegaloe.com">info@atboegaloe.com</a></li></ul>
-      </div>
-      <div>
-        <h4>New in the store</h4>
-        <p style="color:rgba(234,223,210,.7);margin-bottom:10px">One short email when new pieces arrive.</p>
-        <form class="news" onsubmit="event.preventDefault();this.innerHTML='<p>Thanks! You are on the list.</p>'"><input type="email" required placeholder="Your email" aria-label="Email"><button>Join</button></form>
-      </div>
+      <div><div class="flogo">at boegaloe</div><p style="color:rgba(235,225,213,.7);max-width:30ch" data-en="Furniture and home accessories on Kaya Grandi, Kralendijk.">Meubels en woonaccessoires op Kaya Grandi, Kralendijk.</p></div>
+      <div><h4 data-en="Visit">Bezoek</h4><ul><li>Kaya Grandi 13</li><li data-en="Mon 9:00 to 13:00">Ma 9:00 tot 13:00</li><li data-en="Tue to Fri 10:00 to 17:00">Di t/m vr 10:00 tot 17:00</li><li data-en="Sat 10:00 to 16:00">Za 10:00 tot 16:00</li></ul></div>
+      <div><h4 data-en="Follow">Volg ons</h4><ul><li><a href="https://instagram.com/atboegaloe" target="_blank" rel="noopener">Instagram</a></li><li><a href="https://facebook.com/atboegaloe" target="_blank" rel="noopener">Facebook</a></li><li><a href="mailto:info@atboegaloe.com">info@atboegaloe.com</a></li></ul></div>
+      <div><h4 data-en="New in the store">Nieuw in de winkel</h4><p style="color:rgba(235,225,213,.7);margin-bottom:10px" data-en="One short email when a new container arrives.">Eén korte mail als er een nieuwe container binnen is.</p><form class="news" onsubmit="event.preventDefault();this.innerHTML='<p>Dank je! / Thanks!</p>'"><input type="email" required placeholder="E-mail" aria-label="E-mail"><button data-en="Join">Aanmelden</button></form></div>
     </div>
-    <div class="legal"><span>© <span id="yr"></span> At Boegaloe</span><span>Concept by Salty Code Studio</span></div>
+    <div class="legal"><span>© <span id="yr"></span> At Boegaloe</span><span data-en="Concept by Salty Code Studio">Concept door Salty Code Studio</span></div>
   </div>
 </footer>
 
-<a class="fab" data-wa="Hi At Boegaloe!" href="#" aria-label="WhatsApp At Boegaloe"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.4.6c-.1.2-.3.3-.1.6.2.3.7 1.2 1.6 1.9 1.1.9 2 1.2 2.3 1.4.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.8-.1 1.4Z"/></svg></a>
+<a class="fab" data-wa="Hoi At Boegaloe!" data-wa-en="Hi At Boegaloe!" href="#" aria-label="WhatsApp At Boegaloe"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.4.6c-.1.2-.3.3-.1.6.2.3.7 1.2 1.6 1.9 1.1.9 2 1.2 2.3 1.4.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.8-.1 1.4Z"/></svg></a>
 
 <script>
-// WhatsApp deep links
 const WA = "5997827566";
-document.querySelectorAll("[data-wa]").forEach(a => {
-  a.href = "https://wa.me/" + WA + "?text=" + encodeURIComponent(a.dataset.wa);
-  a.target = "_blank"; a.rel = "noopener";
-});
-
-// Opening hours in Bonaire time (UTC-4, no DST)
-const HOURS = [null,null,[10,17],[10,17],[10,17],[10,17],[10,16]]; // Sun..Sat
-const NAMES = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-const now = new Date(Date.now() - 4*3600e3);
-const day = now.getUTCDay(), h = now.getUTCHours() + now.getUTCMinutes()/60;
+// Hours, Bonaire time (UTC-4, no DST). Sun..Sat
+const HOURS = [null,[9,13],[10,17],[10,17],[10,17],[10,17],[10,16]];
+const DAYS = {nl:["Zondag","Maandag","Dinsdag","Woensdag","Donderdag","Vrijdag","Zaterdag"],en:["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]};
+const T = {
+  nl:{open:"Nu open",closed:"Gesloten",until:"tot",opens:"opent",today:"vandaag",tomorrow:"morgen",at:"om",to:"tot",closedDay:"Gesloten",todayTag:"vandaag"},
+  en:{open:"Open now",closed:"Closed",until:"until",opens:"opens",today:"today",tomorrow:"tomorrow",at:"at",to:"to",closedDay:"Closed",todayTag:"today"}
+};
 const pad = n => String(n).padStart(2,"0") + ":00";
-const list = document.getElementById("hours");
-[1,2,3,4,5,6,0].forEach(d => {
-  const li = document.createElement("li");
-  if (d === day) li.className = "today";
-  const t = HOURS[d];
-  li.innerHTML = `<span>${NAMES[d]}</span><span class="${t ? "" : "closed"}">${t ? pad(t[0]) + " to " + pad(t[1]) : "Closed"}</span>`;
-  list.appendChild(li);
-});
-const t = HOURS[day];
-const open = t && h >= t[0] && h < t[1];
-let next = ""; for (let i = 1; i <= 7; i++) { const d = (day + i) % 7; if (HOURS[d]) { next = (i === 1 ? "tomorrow" : NAMES[d]) + " at " + pad(HOURS[d][0]); break; } }
-const opensToday = t && h < t[0];
-document.getElementById("dot").classList.toggle("open", !!open);
-document.getElementById("statusText").innerHTML = open
-  ? `Open now<span class="lbl">, until ${pad(t[1])}</span>`
-  : `Closed<span class="lbl">, opens ${opensToday ? "today at " + pad(t[0]) : next}</span>`;
-document.getElementById("heroHours").textContent = open ? "Open now" : "Closed now";
-document.getElementById("heroHoursSub").textContent = open ? "until " + pad(t[1]) + " today" : "opens " + (opensToday ? "today at " + pad(t[0]) : next);
+document.querySelectorAll("[data-en]").forEach(el => el.dataset.nl = el.innerHTML);
+
+function render(lang){
+  document.documentElement.lang = lang;
+  document.querySelectorAll("[data-en]").forEach(el => el.innerHTML = lang === "en" ? el.dataset.en : el.dataset.nl);
+  document.querySelectorAll("[data-wa]").forEach(a => {
+    const msg = lang === "en" && a.dataset.waEn ? a.dataset.waEn : a.dataset.wa;
+    a.href = "https://wa.me/" + WA + "?text=" + encodeURIComponent(msg); a.target = "_blank"; a.rel = "noopener";
+  });
+  document.querySelectorAll(".lang button").forEach(b => b.setAttribute("aria-pressed", b.dataset.set === lang));
+  const t = T[lang], D = DAYS[lang];
+  const now = new Date(Date.now() - 4*3600e3), day = now.getUTCDay(), h = now.getUTCHours() + now.getUTCMinutes()/60;
+  const list = document.getElementById("hours"); list.innerHTML = "";
+  [1,2,3,4,5,6,0].forEach(d => {
+    const hr = HOURS[d], li = document.createElement("li");
+    if (d === day) li.className = "today";
+    li.innerHTML = `<span>${D[d]}${d === day ? `<span class="tag">${t.todayTag}</span>` : ""}</span><span class="${hr ? "" : "closed"}">${hr ? pad(hr[0]) + " " + t.to + " " + pad(hr[1]) : t.closedDay}</span>`;
+    list.appendChild(li);
+  });
+  const hr = HOURS[day], open = hr && h >= hr[0] && h < hr[1], later = hr && h < hr[0];
+  let next = ""; for (let i = 1; i <= 7; i++) { const d = (day + i) % 7; if (HOURS[d]) { next = (i === 1 ? t.tomorrow : D[d].toLowerCase()) + " " + t.at + " " + pad(HOURS[d][0]); break; } }
+  const when = later ? t.today + " " + t.at + " " + pad(hr[0]) : next;
+  document.getElementById("dot").classList.toggle("open", !!open);
+  document.getElementById("statusText").innerHTML = open ? `${t.open}<span class="lbl">, ${t.until} ${pad(hr[1])}</span>` : `${t.closed}<span class="lbl">, ${t.opens} ${when}</span>`;
+  document.getElementById("heroOpen").textContent = open ? t.open : t.closed;
+  document.getElementById("heroOpenSub").textContent = open ? t.until + " " + pad(hr[1]) + " " + t.today : t.opens + " " + when;
+  try { localStorage.setItem("atb-lang", lang); } catch(e) {}
+}
+let saved = null; try { saved = localStorage.getItem("atb-lang"); } catch(e) {}
+const q = new URLSearchParams(location.search).get("lang");
+render(q === "en" || q === "nl" ? q : saved || "nl");
+document.querySelectorAll(".lang button").forEach(b => b.addEventListener("click", () => render(b.dataset.set)));
 document.getElementById("yr").textContent = new Date().getFullYear();
 
-// Reveal on scroll
-const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } }), {threshold:.12});
+const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } }), {threshold:.1});
 document.querySelectorAll(".reveal").forEach(el => io.observe(el));
 </script>
 </body>
