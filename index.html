@@ -197,6 +197,96 @@ footer a:hover{color:#fff}
   .ctas .btn{width:100%}
   .hp-small{width:44%}
 }
+
+/* catalog */
+.catalog{padding:110px 0 100px}
+.cat-head{display:flex;justify-content:space-between;align-items:end;gap:32px;margin-bottom:36px;flex-wrap:wrap}
+.cat-head h2{font-size:clamp(44px,5.4vw,78px)}
+.cat-head p{color:var(--muted);font-size:18px;max-width:44ch;margin-top:16px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;max-width:620px}
+.chips button{border:1px solid var(--line);background:transparent;border-radius:999px;padding:9px 16px;font:600 14px var(--sans);color:var(--ink);cursor:pointer;transition:background .2s,color .2s}
+.chips button:hover{border-color:var(--ink)}
+.chips button[aria-selected=true]{background:var(--ink);color:var(--plaster);border-color:var(--ink)}
+.cat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.cat-empty{color:var(--muted)}
+.prod{display:flex;flex-direction:column}
+.prod-img{position:relative;border-radius:8px;overflow:hidden;aspect-ratio:4/5;background:var(--plaster-2)}
+.prod-img img{width:100%;height:100%;object-fit:cover;transition:transform .7s cubic-bezier(.2,.7,.2,1)}
+.prod:hover .prod-img img{transform:scale(1.04)}
+.badge{position:absolute;left:10px;top:10px;background:rgba(244,237,228,.95);color:var(--ink);font-size:12px;font-weight:700;padding:5px 10px;border-radius:999px}
+.badge.b-new{background:var(--pink);color:#fff}
+.badge.b-last{background:var(--orange);color:#fff}
+.heart{position:absolute;right:10px;top:10px;width:40px;height:40px;border-radius:50%;border:0;background:rgba(244,237,228,.95);display:grid;place-items:center;cursor:pointer;transition:transform .2s}
+.heart:hover{transform:scale(1.08)}
+.heart svg{width:20px;height:20px;fill:none;stroke:var(--ink);stroke-width:1.8}
+.heart[aria-pressed=true]{background:var(--terra)}
+.heart[aria-pressed=true] svg{fill:#fff;stroke:#fff}
+.prod-body{display:grid;grid-template-columns:1fr auto;gap:2px 12px;align-items:center;padding:14px 2px 0}
+.prod-body h3{font-family:var(--sans);font-size:16px;font-weight:600;letter-spacing:0;line-height:1.3;grid-column:1}
+.prod-body p{color:var(--muted);font-size:14px;grid-column:1}
+.reserve{grid-column:2;grid-row:1/3;text-decoration:none;font-weight:700;font-size:14px;padding:10px 14px;border-radius:999px;background:var(--ink);color:var(--plaster);white-space:nowrap}
+.reserve:hover{background:var(--terra)}
+.listbar{position:fixed;left:50%;bottom:20px;z-index:40;transform:translate(-50%,140%);display:flex;align-items:center;gap:14px;background:var(--ink);color:var(--plaster);padding:10px 10px 10px 14px;border-radius:999px;box-shadow:0 20px 40px -14px rgba(0,0,0,.5);transition:transform .45s cubic-bezier(.2,.8,.2,1);max-width:calc(100% - 32px)}
+.listbar.show{transform:translate(-50%,0)}
+.lb-thumbs{display:flex}
+.lb-thumbs img{width:34px;height:34px;border-radius:50%;object-fit:cover;border:2px solid var(--ink);margin-left:-10px}
+.lb-thumbs img:first-child{margin-left:0}
+#lbText{font-weight:600;font-size:14px;white-space:nowrap}
+.lb-clear{background:none;border:0;color:rgba(244,237,228,.6);font:500 13px var(--sans);cursor:pointer;text-decoration:underline}
+.listbar .btn{padding:12px 18px;font-size:14px;white-space:nowrap}
+
+/* bed picker */
+.beds{background:var(--plaster-2);padding:110px 0}
+.beds .grid{display:grid;grid-template-columns:1.1fr 1fr;gap:64px;align-items:center}
+.bed-stage{background:var(--plaster);border-radius:12px;padding:40px 28px 28px;position:relative}
+.bed-stage::before{content:"";position:absolute;inset:0 0 auto 0;height:45%;background:var(--terra);opacity:.12;border-radius:12px 12px 0 0}
+.bed-stage svg{position:relative;width:100%;height:auto;overflow:visible}
+#bedGroup *{transition:fill .35s,x .35s,width .35s,y .35s,height .35s}
+.bed-label{position:relative;text-align:center;font-weight:600;font-size:15px;margin-top:14px}
+.beds h2{font-size:clamp(40px,4.8vw,68px)}
+.bed-lead{color:var(--muted);font-size:18px;max-width:42ch;margin:20px 0 30px}
+.opt{margin-bottom:22px}
+.opt h4{font:600 14px var(--sans);margin-bottom:10px}
+.seg{display:flex;flex-wrap:wrap;gap:8px}
+.seg button{border:1px solid var(--line);background:var(--plaster);border-radius:10px;padding:10px 14px;font:600 14px var(--sans);color:var(--ink);cursor:pointer}
+.seg button[aria-pressed=true]{background:var(--ink);color:var(--plaster);border-color:var(--ink)}
+.sw{display:flex;flex-wrap:wrap;gap:10px}
+.sw button{width:36px;height:36px;border-radius:50%;border:0;background:var(--c);cursor:pointer;box-shadow:inset 0 0 0 1px rgba(0,0,0,.1);transition:transform .2s}
+.sw button:hover{transform:scale(1.1)}
+.sw button[aria-pressed=true]{box-shadow:0 0 0 3px var(--plaster-2),0 0 0 5px var(--ink)}
+.beds .btn{margin-top:10px}
+
+/* instagram feed */
+.feed{padding:110px 0}
+.feed-head{display:flex;justify-content:space-between;align-items:center;gap:20px;margin-bottom:28px;flex-wrap:wrap}
+.ig-id{display:flex;align-items:center;gap:14px;text-decoration:none}
+.ig-id img{width:64px;height:64px;border-radius:50%;object-fit:cover;background:#fff;padding:3px;box-shadow:0 0 0 2px var(--pink)}
+.ig-id strong{display:block;font-family:var(--serif);font-weight:400;font-size:30px;line-height:1.1}
+.ig-id span span{color:var(--muted);font-size:15px}
+.feed-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
+.post{position:relative;aspect-ratio:1;overflow:hidden;border-radius:4px;display:block}
+.post img{width:100%;height:100%;object-fit:cover;transition:transform .7s cubic-bezier(.2,.7,.2,1)}
+.post .cap{position:absolute;inset:0;display:flex;align-items:flex-end;padding:18px;color:#fff;font-size:14px;line-height:1.45;background:linear-gradient(180deg,rgba(0,0,0,0) 40%,rgba(0,0,0,.7));opacity:0;transition:opacity .3s}
+.post:hover img{transform:scale(1.05)}
+.post:hover .cap,.post:focus .cap{opacity:1}
+
+@media (max-width:980px){
+  .cat-grid{grid-template-columns:repeat(2,1fr);gap:16px}
+  .beds .grid{grid-template-columns:1fr;gap:40px}
+  .catalog,.beds,.feed{padding:80px 0}
+}
+@media (max-width:560px){
+  .prod-body{grid-template-columns:1fr}
+  .reserve{grid-column:1;grid-row:auto;justify-self:start;margin-top:8px;padding:8px 12px;font-size:13px}
+  .chips{flex-wrap:nowrap;overflow-x:auto;max-width:100%;padding-bottom:4px}
+  .chips button{white-space:nowrap}
+  .feed-grid{grid-template-columns:repeat(2,1fr)}
+  .post .cap{opacity:1;font-size:12px;padding:10px;-webkit-line-clamp:3}
+  #lbText{display:none}
+  .lb-clear{display:none}
+}
+
+body.has-list .fab{bottom:92px}
 </style>
 </head>
 <body>
@@ -213,8 +303,9 @@ footer a:hover{color:#fff}
     <a class="logo" href="#top" aria-label="At Boegaloe"><img src="img/logo.png" alt="At Boegaloe"></a>
     <ul>
       <li><a href="#winkel" data-en="The store">De winkel</a></li>
+      <li><a href="#collectie" data-en="Collection">Collectie</a></li>
       <li><a href="#bedden" data-en="Beds to order">Bedden op maat</a></li>
-      <li><a href="#nieuw" data-en="New in">Nieuw binnen</a></li>
+      <li><a href="#nieuw" data-en="Instagram">Instagram</a></li>
       <li><a href="#verhaal" data-en="Our story">Ons verhaal</a></li>
       <li><a href="#bezoek" data-en="Visit">Bezoek</a></li>
     </ul>
@@ -229,7 +320,7 @@ footer a:hover{color:#fff}
     <h1 data-en="Furnish your home on Bonaire. <em>No container needed.</em>">Je huis inrichten op Bonaire. <em>Zonder eigen container.</em></h1>
     <p class="lead" data-en="Sofas, beds, art and accessories from Indonesia and the Netherlands. Picked by a mother and daughter on Kaya Grandi.">Banken, bedden, kunst en accessoires uit Indonesië en Nederland. Uitgezocht door moeder en dochter op Kaya Grandi.</p>
     <div class="ctas">
-      <a class="btn btn-ink" href="#winkel" data-en="Walk through the store">Loop door de winkel</a>
+      <a class="btn btn-ink" href="#collectie" data-en="See what's in store">Bekijk de collectie</a>
       <a class="btn btn-line" data-wa="Hoi At Boegaloe! Ik wil graag stylingadvies. Ik stuur een foto van mijn kamer." data-wa-en="Hi At Boegaloe! I'd like some styling advice. I'll send a photo of my room." href="#">
         <svg class="wa" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.4.6c-.1.2-.3.3-.1.6.2.3.7 1.2 1.6 1.9 1.1.9 2 1.2 2.3 1.4.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.8-.1 1.4Z"/></svg>
         <span data-en="Send us your room">Stuur ons je kamer</span>
@@ -289,31 +380,68 @@ footer a:hover{color:#fff}
   </div>
 </section>
 
-<section id="bedden" class="order">
+<section id="collectie" class="catalog">
+  <div class="wrap">
+    <div class="cat-head reveal">
+      <div>
+        <h2 data-en="In the store now.">Nu in de winkel.</h2>
+        <p data-en="Tap reserve and we put it aside for you. Or save a few pieces and send your list in one message.">Tik op reserveren en wij zetten het apart. Of bewaar een paar stukken en stuur je lijstje in één bericht.</p>
+      </div>
+      <div class="chips" id="chips" role="tablist"></div>
+    </div>
+    <div class="cat-grid" id="catGrid"></div>
+  </div>
+</section>
+
+<div class="listbar" id="listbar" aria-live="polite">
+  <div class="lb-thumbs" id="lbThumbs"></div>
+  <span id="lbText"></span>
+  <button class="lb-clear" id="lbClear" type="button"></button>
+  <a class="btn btn-plaster" id="lbSend" href="#" target="_blank" rel="noopener"></a>
+</div>
+
+<section id="bedden" class="beds">
   <div class="wrap grid">
-    <div class="ph reveal"><img src="img/ig-velvet.jpg" alt="Stalenkaart met velvet kleuren voor bedden" loading="lazy"></div>
+    <div class="bed-stage reveal">
+      <svg viewBox="0 0 520 360" id="bedSvg" aria-hidden="true">
+        <ellipse cx="260" cy="330" rx="230" ry="16" fill="rgba(43,29,24,.12)"/>
+        <g id="bedGroup">
+          <rect id="bHead" x="60" y="40" width="400" height="150" rx="26"/>
+          <g id="bHeadLines" stroke="rgba(0,0,0,.14)" stroke-width="2"><line x1="140" y1="52" x2="140" y2="182"/><line x1="220" y1="52" x2="220" y2="182"/><line x1="300" y1="52" x2="300" y2="182"/><line x1="380" y1="52" x2="380" y2="182"/></g>
+          <rect id="bBase" x="40" y="200" width="440" height="100" rx="18"/>
+          <rect id="bShade" x="40" y="262" width="440" height="38" rx="14" fill="rgba(0,0,0,.14)"/>
+          <rect x="52" y="160" width="416" height="56" rx="16" fill="#FBF7F1"/>
+          <rect x="52" y="194" width="416" height="22" rx="10" fill="#EFE7DC"/>
+          <rect id="pL" x="78" y="128" width="160" height="46" rx="20" fill="#FFFDF9" stroke="#E6DCCF"/>
+          <rect id="pR" x="282" y="128" width="160" height="46" rx="20" fill="#FFFDF9" stroke="#E6DCCF"/>
+          <path id="throw" d="M300 176h168v40H300c-14 0-14-40 0-40z"/>
+          <rect x="66" y="298" width="18" height="22" rx="4" fill="#3B2B26"/><rect x="436" y="298" width="18" height="22" rx="4" fill="#3B2B26"/>
+        </g>
+      </svg>
+      <p class="bed-label" id="bedLabel"></p>
+    </div>
     <div class="reveal">
-      <h2 data-en="Your bed, in your colour.">Jouw bed, in jouw kleur.</h2>
-      <p data-en="Velvet beds in dozens of colours, with or without headboard. Boxsprings too. Pick the fabric in the store. We order it for you.">Velvet bedden in tientallen kleuren, met of zonder hoofdbord. Ook boxsprings. Kies de stof in de winkel. Wij bestellen hem voor je.</p>
-      <div class="swatches" aria-hidden="true"><i style="background:#E8DCCB"></i><i style="background:#8B7563"></i><i style="background:#C7262E"></i><i style="background:#C86E6E"></i><i style="background:#5B1E3A"></i><i style="background:#2E5FA8"></i><i style="background:#1F4A3E"></i><i style="background:#D9B33A"></i></div>
-      <a class="btn btn-ink" data-wa="Hoi At Boegaloe! Ik heb interesse in een velvet bed. Welke kleuren en maten zijn er?" data-wa-en="Hi At Boegaloe! I'm interested in a velvet bed. Which colours and sizes are there?" href="#" data-en="Ask about beds">Vraag naar bedden</a>
+      <h2 data-en="Design your bed. We order it.">Stel je bed samen. Wij bestellen het.</h2>
+      <p class="bed-lead" data-en="Pick the fabric, size and headboard. Send it and Fiona or Robbin replies with a price and delivery time.">Kies de stof, de maat en het hoofdbord. Verstuur het en Fiona of Robbin stuurt je een prijs en levertijd.</p>
+      <div class="opt"><h4 id="lblType"></h4><div class="seg" id="optType"></div></div>
+      <div class="opt"><h4 id="lblColour"></h4><div class="sw" id="optColour"></div></div>
+      <div class="opt"><h4 id="lblSize"></h4><div class="seg" id="optSize"></div></div>
+      <div class="opt"><h4 id="lblHead"></h4><div class="seg" id="optHead"></div></div>
+      <a class="btn btn-ink" id="bedSend" href="#" target="_blank" rel="noopener"></a>
     </div>
   </div>
 </section>
 
-<section id="nieuw" class="newin">
+<section id="nieuw" class="feed">
   <div class="wrap">
-    <div class="head reveal">
-      <h2 data-en="New in this week.">Net binnen.</h2>
-      <a class="btn btn-line" href="https://instagram.com/atboegaloe" target="_blank" rel="noopener" data-en="Follow @atboegaloe">Volg @atboegaloe</a>
+    <div class="feed-head reveal">
+      <a class="ig-id" href="https://instagram.com/atboegaloe" target="_blank" rel="noopener">
+        <img src="img/logo.png" alt="">
+        <span><strong>@atboegaloe</strong><span data-en="New in, every week">Elke week nieuw binnen</span></span>
+      </a>
+      <a class="btn btn-line" href="https://instagram.com/atboegaloe" target="_blank" rel="noopener" data-en="Follow on Instagram">Volg op Instagram</a>
     </div>
-    <div class="strip reveal">
-      <a data-wa="Hoi At Boegaloe! Hebben jullie de bekers met letters nog?" data-wa-en="Hi At Boegaloe! Do you still have the letter cups?" href="#"><img src="img/ig-cups.jpg" alt="Bekers met letters op het strand" loading="lazy"><span data-en="Letter cups">Letterbekers</span></a>
-      <a data-wa="Hoi At Boegaloe! Hebben jullie de gehaakte tassen nog?" data-wa-en="Hi At Boegaloe! Do you still have the crochet bags?" href="#"><img src="img/ig-bags.jpg" alt="Gehaakte tassen in roze, oranje en blauw" loading="lazy"><span data-en="Crochet bags">Gehaakte tassen</span></a>
-      <a data-wa="Hoi At Boegaloe! Hebben jullie de tegeltjes nog?" data-wa-en="Hi At Boegaloe! Do you still have the tiles?" href="#"><img src="img/ig-coffee.jpg" alt="Tegeltjes met teksten naast koffiebekers" loading="lazy"><span data-en="Tiles with a message">Tegeltjes met tekst</span></a>
-      <a data-wa="Hoi At Boegaloe! Hebben jullie het La Dolce Vita kussen nog?" data-wa-en="Hi At Boegaloe! Do you still have the La Dolce Vita cushion?" href="#"><img src="img/ig-dolce-vita.jpg" alt="Roze ruche kussen La Dolce Vita" loading="lazy"><span data-en="Ruffle cushions">Ruchekussens</span></a>
-      <a data-wa="Hoi At Boegaloe! Hebben jullie de rotan spiegels nog?" data-wa-en="Hi At Boegaloe! Do you still have the rattan mirrors?" href="#"><img src="img/mirror.jpg" alt="Rotan zonnespiegel" loading="lazy"><span data-en="Rattan mirrors">Rotan spiegels</span></a>
-    </div>
+    <div class="feed-grid reveal" id="feedGrid"></div>
   </div>
 </section>
 
@@ -390,6 +518,8 @@ footer a:hover{color:#fff}
 
 <a class="fab" data-wa="Hoi At Boegaloe!" data-wa-en="Hi At Boegaloe!" href="#" aria-label="WhatsApp At Boegaloe"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.4.6c-.1.2-.3.3-.1.6.2.3.7 1.2 1.6 1.9 1.1.9 2 1.2 2.3 1.4.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.8-.1 1.4Z"/></svg></a>
 
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
 <script>
 const WA = "5997827566";
 // Hours, Bonaire time (UTC-4, no DST). Sun..Sat
@@ -426,6 +556,7 @@ function render(lang){
   document.getElementById("statusText").innerHTML = open ? `${t.open}<span class="lbl">, ${t.until} ${pad(hr[1])}</span>` : `${t.closed}<span class="lbl">, ${t.opens} ${when}</span>`;
   document.getElementById("heroOpen").textContent = open ? t.open : t.closed;
   document.getElementById("heroOpenSub").textContent = open ? t.until + " " + pad(hr[1]) + " " + t.today : t.opens + " " + when;
+  if (window.ATB_onLang) window.ATB_onLang(lang);
   try { localStorage.setItem("atb-lang", lang); } catch(e) {}
 }
 let saved = null; try { saved = localStorage.getItem("atb-lang"); } catch(e) {}

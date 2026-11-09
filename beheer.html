@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Beheer | At Boegaloe</title>
+<link rel="icon" href="img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--plaster:#F4EDE4;--plaster-2:#EBE1D5;--ink:#2B1D18;--muted:#6D5B52;--line:rgba(43,29,24,.14);--terra:#A65242;--serif:"Fraunces",Georgia,serif;--sans:"Manrope",system-ui,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--plaster);color:var(--ink);font:400 16px/1.5 var(--sans);-webkit-font-smoothing:antialiased}
+.wrap{width:min(560px,100% - 32px);margin:0 auto;padding:24px 0 80px}
+.top{display:flex;align-items:center;justify-content:space-between;margin-bottom:22px}
+.top img{width:56px;height:56px;mix-blend-mode:multiply}
+.top a{font-weight:600;font-size:14px;color:var(--ink)}
+h1{font-family:var(--serif);font-weight:400;font-size:42px;line-height:1.05;margin-bottom:8px}
+.sub{color:var(--muted);margin-bottom:22px}
+.demo{background:#FBE3D4;border-radius:10px;padding:12px 14px;font-size:14px;margin-bottom:24px}
+form{background:#fff;border-radius:14px;padding:20px;display:grid;gap:16px;box-shadow:0 10px 30px -18px rgba(43,29,24,.35)}
+label{display:grid;gap:6px;font-weight:600;font-size:14px}
+input,select{font:inherit;font-weight:400;border:1px solid var(--line);border-radius:10px;padding:12px 14px;background:var(--plaster);color:var(--ink);width:100%}
+.photo{position:relative;border:2px dashed var(--line);border-radius:12px;aspect-ratio:4/3;display:grid;place-items:center;text-align:center;color:var(--muted);overflow:hidden;cursor:pointer;background:var(--plaster)}
+.photo input{position:absolute;inset:0;opacity:0;cursor:pointer}
+.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.photo svg{width:34px;height:34px;stroke:var(--terra);fill:none;stroke-width:1.5;margin:0 auto 6px;display:block}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.seg{display:flex;gap:8px;flex-wrap:wrap}
+.seg label{display:block}
+.seg input{display:none}
+.seg span{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:9px 14px;font-weight:600;cursor:pointer}
+.seg input:checked+span{background:var(--ink);color:var(--plaster);border-color:var(--ink)}
+button.save{background:var(--ink);color:var(--plaster);border:0;border-radius:999px;padding:16px;font:700 16px var(--sans);cursor:pointer}
+button.save:disabled{opacity:.4}
+h2{font-family:var(--serif);font-weight:400;font-size:28px;margin:36px 0 14px}
+.list{display:grid;gap:10px}
+.item{display:grid;grid-template-columns:64px 1fr auto;gap:12px;align-items:center;background:#fff;border-radius:12px;padding:8px}
+.item img{width:64px;height:64px;object-fit:cover;border-radius:8px}
+.item strong{display:block}
+.item span{color:var(--muted);font-size:13px}
+.item button{border:0;background:none;color:var(--terra);font:600 14px var(--sans);cursor:pointer;padding:8px}
+.empty{color:var(--muted);font-size:14px}
+.toast{position:fixed;left:50%;bottom:24px;transform:translate(-50%,120px);background:var(--ink);color:var(--plaster);padding:12px 18px;border-radius:999px;font-weight:600;transition:transform .35s}
+.toast.show{transform:translate(-50%,0)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top"><img src="img/logo.png" alt="At Boegaloe"><a href="index.html#collectie">Bekijk de site →</a></div>
+  <h1>Nieuw product toevoegen</h1>
+  <p class="sub">Foto maken, naam typen, opslaan. Het staat direct bij "Nu in de winkel".</p>
+  <p class="demo"><strong>Demo.</strong> In deze voorbeeldversie blijft wat je toevoegt alleen op dit apparaat. In de echte site ziet iedereen het meteen.</p>
+
+  <form id="f">
+    <div class="photo" id="drop">
+      <input type="file" accept="image/*" capture="environment" id="file" required>
+      <div><svg viewBox="0 0 32 32"><rect x="4" y="9" width="24" height="17" rx="3"/><circle cx="16" cy="17.5" r="5"/><path d="M11 9l2-3h6l2 3"/></svg>Tik om een foto te maken</div>
+    </div>
+    <label>Naam<input id="nl" required placeholder="Bijv. Velvet fauteuil oker"></label>
+    <label>Naam in het Engels <span style="font-weight:400;color:var(--muted)">(mag leeg)</span><input id="en" placeholder="Velvet armchair, ochre"></label>
+    <div class="row">
+      <label>Categorie<select id="cat"></select></label>
+      <label>Prijs in $ <span style="font-weight:400;color:var(--muted)">(mag leeg)</span><input id="price" inputmode="decimal" placeholder="Vraag de prijs"></label>
+    </div>
+    <div>
+      <p style="font-weight:600;font-size:14px;margin-bottom:8px">Label</p>
+      <div class="seg">
+        <label><input type="radio" name="st" value="new" checked><span>Nieuw</span></label>
+        <label><input type="radio" name="st" value="stock"><span>Op voorraad</span></label>
+        <label><input type="radio" name="st" value="last"><span>Laatste</span></label>
+      </div>
+    </div>
+    <button class="save" id="save" disabled>Zet online</button>
+  </form>
+
+  <h2>Door jou toegevoegd</h2>
+  <div class="list" id="list"></div>
+</div>
+<div class="toast" id="toast">Staat online ✓</div>
+
+<script src="js/data.js"></script>
+<script>
+const KEY = "atb-owner-items";
+const get = () => { try { return JSON.parse(localStorage.getItem(KEY)) || []; } catch (e) { return []; } };
+const put = v => { try { localStorage.setItem(KEY, JSON.stringify(v)); return true; } catch (e) { alert("Geen ruimte meer op dit apparaat. Verwijder eerst een product."); return false; } };
+const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const catSel = document.getElementById("cat");
+catSel.innerHTML = ATB_CATS.filter(c => c.id !== "all").map(c => `<option value="${c.id}">${c.nl}</option>`).join("");
+let photo = null;
+const file = document.getElementById("file"), save = document.getElementById("save"), nl = document.getElementById("nl");
+const check = () => save.disabled = !(photo && nl.value.trim());
+nl.addEventListener("input", check);
+file.addEventListener("change", () => {
+  const f = file.files[0]; if (!f) return;
+  const img = new Image();
+  img.onload = () => {
+    const max = 900, s = Math.min(1, max / Math.max(img.width, img.height));
+    const c = document.createElement("canvas"); c.width = img.width * s; c.height = img.height * s;
+    c.getContext("2d").drawImage(img, 0, 0, c.width, c.height);
+    photo = c.toDataURL("image/jpeg", 0.78);
+    const drop = document.getElementById("drop");
+    drop.querySelector("img")?.remove();
+    const p = new Image(); p.src = photo; drop.appendChild(p);
+    URL.revokeObjectURL(img.src); check();
+  };
+  img.src = URL.createObjectURL(f);
+});
+document.getElementById("f").addEventListener("submit", e => {
+  e.preventDefault();
+  const item = { id: "own-" + Date.now(), cat: catSel.value, img: photo, nl: nl.value.trim(), en: document.getElementById("en").value.trim() || nl.value.trim(),
+    price: document.getElementById("price").value.trim().replace(/^\$/, ""), status: document.querySelector("[name=st]:checked").value };
+  if (!put([item].concat(get()))) return;
+  e.target.reset(); photo = null; document.getElementById("drop").querySelector("img")?.remove(); check(); render();
+  const t = document.getElementById("toast"); t.classList.add("show"); setTimeout(() => t.classList.remove("show"), 1800);
+});
+function render() {
+  const items = get(), list = document.getElementById("list");
+  list.innerHTML = items.length ? items.map(i => `<div class="item"><img src="${i.img}" alt=""><div><strong>${esc(i.nl)}</strong><span>${esc((ATB_CATS.find(c => c.id === i.cat) || {}).nl || "")}${i.price ? " · $" + esc(i.price) : ""}</span></div><button data-del="${i.id}">Verwijder</button></div>`).join("")
+    : `<p class="empty">Nog niets toegevoegd. Probeer het: maak een foto van iets in de winkel.</p>`;
+}
+document.addEventListener("click", e => { const d = e.target.dataset.del; if (d) { put(get().filter(i => i.id !== d)); render(); } });
+render();
+</script>
+</body>
+</html>
